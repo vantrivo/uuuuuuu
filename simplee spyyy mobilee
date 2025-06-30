@@ -1706,7 +1706,7 @@ local function taskscheduler()
         scheduled = {}
         return
     end
-    if #scheduled > SIMPLESPYCONFIG_MaxRemotes + 100 then
+    if #scheduled > SIMPLESPYCONFIG_MaxRemotes + 500 then
         table.remove(scheduled, #scheduled)
     end
     if #scheduled > 0 then
